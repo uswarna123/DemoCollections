@@ -12,7 +12,7 @@ public class DemoHashMap {
         map2.put(10,"shane");
         System.out.println("first map: "+map);
        map2.putAll(map);
-       // System.out.println(map2.putAll(map));
+       //System.out.print(map2.putAll(map));
         System.out.println("second map: "+map2);
         for (Map.Entry entry:map.entrySet()){
             System.out.println("Key: "+entry.getKey()+" Value: "+entry.getValue());
