@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
 public class DemoArrayList {
     static List<String> arrayList = new ArrayList<>();
     public static void addElementsToArrayList(String string)
@@ -16,15 +14,24 @@ public class DemoArrayList {
     {
         arrayList.remove(index);
     }
+    public static void iterateAStringThroughForLoop() {
+        for (Object string : arrayList.toArray()) {
+            System.out.println(string);
+        }
+
+    }
     public static void main(String[] args) {
 
         DemoArrayList.addElementsToArrayList("blue");
         DemoArrayList.addIndexAndValueToArrayList(0,"black");
         System.out.println(arrayList);
         DemoArrayList.addIndexAndValueToArrayList(0,"pink");
+        DemoArrayList.addIndexAndValueToArrayList(0,"green");
+        DemoArrayList.addElementsToArrayList("red");
         System.out.println(arrayList);
         DemoArrayList.removeElementByIndex(2);
         System.out.println(arrayList);
+        DemoArrayList.iterateAStringThroughForLoop();
     }
 
 }
